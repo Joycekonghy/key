@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AONATECH - Cat Claw Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="brand">AONATECH</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="title">
+                <span class="main-text">Cat Claw Machine</span>
+                <span class="sub-text">Grab a cat to visit a website!</span>
+            </h1>
+        </section>
+
+        <!-- Claw Machine -->
+        <div class="claw-machine">
+            <!-- Claw outside machine-top -->
+            <div class="claw" id="claw">
+                <div class="claw-arm"></div>
+                <div class="claw-left">🦾</div>
+                <div class="claw-right">🦾</div>
+            </div>
+            
+            <div class="machine-top">
+                <div class="claw-container">
+                </div>
+            </div>
+            
+            <div class="machine-glass">
+                <div class="prize-area" id="prizeArea">
+                    <!-- Small cats with links -->
+                    <div class="prize-cat" data-link="https://btcpredictgame.com">
+                        <span class="cat-emoji">🐱</span>
+                        <span class="cat-label">btc predict game</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="machine-controls">
+                <div class="control-panel">
+                    <button class="control-btn" id="leftBtn">⬅️</button>
+                    <button class="control-btn" id="rightBtn">➡️</button>
+                    <button class="control-btn grab-btn" id="grabBtn">🎯 GRAB</button>
+                </div>
+                <div class="instructions">
+                    Use ⬅️➡️ to move, then 🎯 GRAB to catch a cat!
+                </div>
+            </div>
+        </div>
+
+        <!-- Caught cats display -->
+        <div class="caught-cats">
+            <h3>Caught Cats 🏆</h3>
+            <div class="caught-display" id="caughtDisplay">
+                <p>No cats caught yet... Try the claw machine!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
